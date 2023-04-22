@@ -1,122 +1,122 @@
 {
   "company": {
-    "name": "React landing page 2021",
-    "logo": "/assets/images/logo.png"
+    "name": "Viet Diffusion",
+    "logo": "/assets/images/logo-768x768.jpg"
   },
   "navigation": [
     {
-      "name": "Product",
+      "name": "Sản Phẩm",
       "href": "product"
     },
     {
-      "name": "Features",
+      "name": "Tính năng",
       "href": "features"
     },
 
     {
-      "name": "Pricing",
+      "name": "Bảng Giá",
       "href": "pricing"
     },
     {
-      "name": "About",
+      "name": "Liên Hệ",
       "href": "about"
     }
   ],
   "callToAction": {
-    "text": "Get started",
+    "text": "Bắt đầu",
     "href": "#"
   },
   "mainHero": {
-    "title": "Use me as your",
-    "subtitle": "landing page.",
-    "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.",
+    "title": "Biến ý tưởng thành",
+    "subtitle": "hình ảnh.",
+    "description": "Dịch vụ tạo ảnh của chúng tôi sẽ giúp bạn tạo ra những bức ảnh độc đáo từ những ý tưởng của bạn. Với công nghệ AI Stable Diffusion tiên tiến, khả năng sáng tạo là vô hạn.",
     "img": "/assets/images/happyTeam.jpeg",
     "primaryAction": {
-      "text": "Get started",
+      "text": "Bắt đầu",
       "href": "#"
     },
     "secondaryAction": {
-      "text": "Email us",
-      "href": "mailto:issaafakattan@gmail.com?subject=I like react landing page!"
+      "text": "Liên hệ",
+      "href": "mailto:ngocnv371@gmail.com?subject=Tôi yêu Viet Diffusion!"
     }
   },
   "product": {
-    "title": "React landing page 2021",
+    "title": "Image generation with Stable Diffusion",
     "items": [
       {
-        "title": "A plug n play template",
-        "description": "Just edit the config.json file with details about your company and voila your beautiful state of the art landing page is ready to go live! Remember to also update your assets, add any images you want to show to /assets/images and link them in the config.json",
+        "title": "Công nghệ AI tiên tiến",
+        "description": "Dịch vụ tạo ảnh của chúng tôi sử dụng công nghệ AI Stable Diffusion mới nhất để biến những ý tưởng của bạn thành những bức ảnh đẹp mắt. Mô hình Text-to-Image dựa trên công nghệ máy học tiên tiến này có khả năng tạo ra ảnh từ văn bản, cho phép bạn tạo ra những bức ảnh độc đáo và chân thực trong vài giây",
         "img": "/assets/images/product1.jpg"
       },
       {
-        "title": "Make it your own!",
-        "description": "Play around with the theme.ts file and configure the color palette to match the branding of your company! If you're feeling wild, maybe change some tailwind css as well!",
+        "title": "Giao diện thân thiện với người dùng",
+        "description": "Dịch vụ của chúng tôi được thiết kế với tiêu chí người dùng là trên hết. Giao diện dễ sử dụng và trực quan, cho phép bạn dễ dàng tạo ra những bức ảnh theo ý minh. Chỉ cần cung cấp ý tưởng và để công nghệ AI Stable Diffusion của chúng tôi bao hết phần còn lại",
         "img": "/assets/images/product2.jpg"
       }
     ]
   },
   "features": {
-    "title": "Latest & greatest ",
-    "subtitle": "All the best technologies out there!",
-    "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.",
+    "title": "Mới nhất & tiên tiến nhất",
+    "subtitle": "Sử dụng những công nghệ tiên tiế nhất!",
+    "description": "Dịch vụ tạo ảnh của chúng tôi linh hoạt và có thể được sử dụng để tạo ra những bức ảnh cho nhiều mục đích khác nhau. Cho dù bạn cần những bức ảnh cho mạng xã hội, trang web, quảng cáo hay bất kỳ mục đích nào khác, dịch vụ của chúng tôi đều đáp ứng được.",
     "items": [
       {
-        "name": "React.js",
-        "description": "React is a free and open-source front-end JavaScript library for building user interfaces or UI components.",
+        "name": "Tùy biến",
+        "description": "Với dịch vụ tạo ảnh của chúng tôi, bạn có toàn quyền kiểm soát những bức ảnh mà bạn tạo ra. Bạn có thể cung cấp những gợi ý cụ thể để tạo ra những bức ảnh đáp ứng chính xác nhu cầu và sở thích của bạn.",
         "icon": "/assets/images/react.png"
       },
       {
-        "name": "Tailwind",
-        "description": "Tailwind CSS is a highly customizable, low-level CSS framework for quickly creating beautiful designs without any annoying opinionated stylesheet nonsense.",
+        "name": "Danh tính ẩn danh",
+        "description": "Chúng tôi coi trọng sự riêng tư của bạn và đảm bảo rằng dữ liệu cá nhân của bạn không liên quan đến việc tạo ra những bức ảnh của bạn. Mọi thứ đều được thực hiện một cách ẩn danh, cho phép bạn tạo ra những bức ảnh một cách yên tâm.",
         "icon": "/assets/images/tailwindcss.svg"
       },
       {
-        "name": "Next.js",
-        "description": "Next.js is a framework for server-rendered React applications using Next.js.",
+        "name": "Tốc độ",
+        "description": "Dịch vụ tạo ảnh của chúng tôi hoạt động nhanh chóng và hiệu quả. Chỉ trong vài giây, bạn có thể tạo ra những bức ảnh đẹp mắt dựa trên những lời nhắc của bạn. Không cần phải chờ đợi lâu, bạn có thể thỏa sức sáng tạo với dịch vụ của chúng tôi..",
         "icon": "/assets/images/nextjs.svg"
       },
       {
-        "name": "Typescript",
-        "description": "TypeScript is a programming language developed and maintained by Microsoft.",
+        "name": "Chất lượng",
+        "description": "Chúng tôi cam kết cung cấp cho bạn những bức ảnh chất lượng cao. Dịch vụ trình tạo ảnh của chúng tôi sử dụng công nghệ AI Stable Diffusion tiên tiến để tạo ra những bức ảnh sắc nét và chi tiết. Bạn sẽ hài lòng với kết quả mà dịch vụ của chúng tôi mang lại.",
         "icon": "/assets/images/ts.png"
       }
     ]
   },
   "pricing": {
-    "title": "Pricing",
+    "title": "Bảng giá",
     "items": [
       {
-        "name": "Free",
-        "price": "$0",
-        "priceDetails": "for one user",
+        "name": "Miễn phí",
+        "price": "0đ",
+        "priceDetails": "cho mỗi tài khoản",
         "features": [
-          "1 user",
-          "Basic Support",
-          "1 GB of storage",
-          "Email support"
+          "40 xu mỗi ngày",
+          "Hỗ trợ cơ bản",
+          "1 GB lưu trữ",
+          "Hỗ trợ qua Email"
         ]
       },
       {
-        "name": "Pro",
-        "price": "$15",
-        "priceDetails": "per user",
+        "name": "Chuyên Nghiệp",
+        "price": "100k đ",
+        "priceDetails": "cho mỗi tài khoản",
 
         "features": [
-          "5 users",
-          "Priority Support",
-          "10 GB of storage",
-          "Phone and Email support"
+          "100 xu mỗi ngày",
+          "Hỗ trợ ưu tiên",
+          "10 GB lưu trữ",
+          "Hỗ trợ qua điện thoại và Email"
         ]
       },
       {
-        "name": "Enterprise",
-        "price": "$29",
-        "priceDetails": "per user",
+        "name": "Doanh Nghiệp",
+        "price": "500k đ",
+        "priceDetails": "cho mỗi tài khoản",
         "features": [
-          "50 users",
-          "24/7 Support",
-          "100 GB of storage",
-          "Phone and Email support"
+          "500 xu mỗi ngày",
+          "Hỗ trợ 24/7",
+          "100 GB lưu trữ",
+          "Hỗ trợ qua điện thoại và Email"
         ]
       }
     ]
@@ -145,9 +145,9 @@
       }
     ],
     "socialMedia": {
-      "github": "https://github.com/issaafalkattan",
-      "twitter": "https://twitter.com/issaafkattan",
-      "linkedin": "https://www.linkedin.com/in/issaaf-kattan/"
+      "github": "https://github.com/ngocnv371",
+      "twitter": "#",
+      "linkedin": "https://www.linkedin.com/in/ngocnv371/"
     }
   }
 }
