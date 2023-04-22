@@ -1,7 +1,7 @@
 {
   "company": {
     "name": "Viet Diffusion",
-    "logo": "/assets/images/logo-768x768.jpg"
+    "logo": "/assets/images/logo-64.png"
   },
   "navigation": [
     {
@@ -63,22 +63,22 @@
       {
         "name": "Tùy biến",
         "description": "Với dịch vụ tạo ảnh của chúng tôi, bạn có toàn quyền kiểm soát những bức ảnh mà bạn tạo ra. Bạn có thể cung cấp những gợi ý cụ thể để tạo ra những bức ảnh đáp ứng chính xác nhu cầu và sở thích của bạn.",
-        "icon": "/assets/images/flexibility.png"
+        "icon": "/assets/images/flexibility-48.png"
       },
       {
         "name": "Danh tính ẩn danh",
         "description": "Chúng tôi coi trọng sự riêng tư của bạn và đảm bảo rằng dữ liệu cá nhân của bạn không liên quan đến việc tạo ra những bức ảnh của bạn. Mọi thứ đều được thực hiện một cách ẩn danh, cho phép bạn tạo ra những bức ảnh một cách yên tâm.",
-        "icon": "/assets/images/anonymity.png"
+        "icon": "/assets/images/anonymity-48.png"
       },
       {
         "name": "Tốc độ",
         "description": "Dịch vụ tạo ảnh của chúng tôi hoạt động nhanh chóng và hiệu quả. Chỉ trong vài giây, bạn có thể tạo ra những bức ảnh đẹp mắt dựa trên những lời nhắc của bạn. Không cần phải chờ đợi lâu, bạn có thể thỏa sức sáng tạo với dịch vụ của chúng tôi..",
-        "icon": "/assets/images/speed.png"
+        "icon": "/assets/images/speed-48.png"
       },
       {
         "name": "Chất lượng",
         "description": "Chúng tôi cam kết cung cấp cho bạn những bức ảnh chất lượng cao. Dịch vụ trình tạo ảnh của chúng tôi sử dụng công nghệ AI Stable Diffusion tiên tiến để tạo ra những bức ảnh sắc nét và chi tiết. Bạn sẽ hài lòng với kết quả mà dịch vụ của chúng tôi mang lại.",
-        "icon": "/assets/images/quality.png"
+        "icon": "/assets/images/quality-48.png"
       }
     ]
   },
