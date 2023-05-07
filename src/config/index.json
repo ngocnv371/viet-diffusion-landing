@@ -57,7 +57,7 @@
   },
   "features": {
     "title": "Mới nhất & tiên tiến nhất",
-    "subtitle": "Sử dụng những công nghệ tiên tiế nhất!",
+    "subtitle": "Sử dụng những công nghệ tiên tiến nhất!",
     "description": "Dịch vụ tạo ảnh của chúng tôi linh hoạt và có thể được sử dụng để tạo ra những bức ảnh cho nhiều mục đích khác nhau. Cho dù bạn cần những bức ảnh cho mạng xã hội, trang web, quảng cáo hay bất kỳ mục đích nào khác, dịch vụ của chúng tôi đều đáp ứng được.",
     "items": [
       {
@@ -88,7 +88,7 @@
       {
         "name": "Miễn phí",
         "price": "0đ",
-        "priceDetails": "cho mỗi tài khoản",
+        "priceDetails": "cho mỗi cá nhân",
         "features": [
           "40 xu mỗi ngày",
           "Hỗ trợ cơ bản",
@@ -98,11 +98,11 @@
       },
       {
         "name": "Chuyên Nghiệp",
-        "price": "100k đ",
-        "priceDetails": "cho mỗi tài khoản",
+        "price": "1k đ",
+        "priceDetails": "cho mỗi ảnh",
 
         "features": [
-          "100 xu mỗi ngày",
+          "nạp xu theo nhu cầu",
           "Hỗ trợ ưu tiên",
           "10 GB lưu trữ",
           "Hỗ trợ qua điện thoại và Email"
@@ -110,12 +110,12 @@
       },
       {
         "name": "Doanh Nghiệp",
-        "price": "500k đ",
-        "priceDetails": "cho mỗi tài khoản",
+        "price": "tùy biến",
+        "priceDetails": "cho mỗi doanh nghiệp",
         "features": [
-          "500 xu mỗi ngày",
+          "vô hạn xu mỗi ngày",
           "Hỗ trợ 24/7",
-          "100 GB lưu trữ",
+          "Tùy chọn lưu trữ",
           "Hỗ trợ qua điện thoại và Email"
         ]
       }
