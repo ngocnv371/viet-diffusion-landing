@@ -18,13 +18,13 @@
       "href": "pricing"
     },
     {
-      "name": "Liên Hệ",
-      "href": "about"
+      "name": "Discord",
+      "href": "https://discord.com/channels/1106203060537135205/1106204919750467654"
     }
   ],
   "callToAction": {
     "text": "Bắt đầu",
-    "href": "#"
+    "href": "https://zalo.me/s/2185484389413571640"
   },
   "mainHero": {
     "title": "Biến ý tưởng thành",
@@ -33,11 +33,12 @@
     "img": "/assets/images/happyTeam.jpeg",
     "primaryAction": {
       "text": "Bắt đầu",
-      "href": "#"
+      "href": "https://zalo.me/s/2185484389413571640"
     },
     "secondaryAction": {
-      "text": "Liên hệ",
-      "href": "mailto:ngocnv371@gmail.com?subject=Tôi yêu Viet Diffusion!"
+      "icon": "https://assets-global.website-files.com/6257adef93867e50d84d30e2/636e0b5061df29d55a92d945_full_logo_blurple_RGB.svg",
+      "text": "",
+      "href": "https://discord.com/channels/1106203060537135205/1106204919750467654"
     }
   },
   "product": {
