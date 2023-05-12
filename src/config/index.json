@@ -89,32 +89,32 @@
       {
         "name": "Miễn phí",
         "price": "0đ",
-        "priceDetails": "cho mỗi cá nhân",
+        "priceDetails": "",
         "features": [
-          "40 xu mỗi ngày",
+          "40 ảnh mỗi ngày",
           "Hỗ trợ cơ bản",
           "1 GB lưu trữ",
-          "Hỗ trợ qua Email"
+          "Hỗ trợ qua Discord"
         ]
       },
       {
-        "name": "Chuyên Nghiệp",
-        "price": "1k đ",
-        "priceDetails": "cho mỗi ảnh",
+        "name": "Nghiệp Dư",
+        "price": "2000 đ",
+        "priceDetails": "mỗi ảnh",
 
         "features": [
-          "nạp xu theo nhu cầu",
+          "vô hạn ảnh mỗi ngày",
           "Hỗ trợ ưu tiên",
           "10 GB lưu trữ",
           "Hỗ trợ qua điện thoại và Email"
         ]
       },
       {
-        "name": "Doanh Nghiệp",
+        "name": "Chuyên Nghiệp",
         "price": "tùy biến",
-        "priceDetails": "cho mỗi doanh nghiệp",
+        "priceDetails": "",
         "features": [
-          "vô hạn xu mỗi ngày",
+          "vô hạn ảnh mỗi ngày",
           "Hỗ trợ 24/7",
           "Tùy chọn lưu trữ",
           "Hỗ trợ qua điện thoại và Email"
