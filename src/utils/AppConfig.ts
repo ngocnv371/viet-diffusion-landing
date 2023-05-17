@@ -1,6 +1,6 @@
 export const AppConfig = {
-  site_name: 'React landing page',
-  title: 'React landing page template 2021',
-  description: 'Production ready plug n play landing page!',
-  locale: 'en',
+  site_name: 'Viet Diffusion Landing Page',
+  title: 'Viet Diffusion',
+  description: 'Tạo ảnh nghệ thuật bằng công nghệ AI tiên tiến',
+  locale: 'vi',
 };

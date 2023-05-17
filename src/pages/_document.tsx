@@ -7,7 +7,15 @@ class MyDocument extends Document {
   render() {
     return (
       <Html lang={AppConfig.locale}>
-        <Head />
+        <Head>
+          <title>{AppConfig.title}</title>
+          <meta property="og:title" content={AppConfig.title} key="title" />
+          <meta
+            property="og:description"
+            content={AppConfig.description}
+            key="description"
+          />
+        </Head>
         <body>
           <Main />
           <NextScript />
