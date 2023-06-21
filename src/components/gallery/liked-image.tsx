@@ -6,11 +6,10 @@ import { ImageInfo } from './model';
 
 type Props = React.ImgHTMLAttributes<HTMLImageElement> & {
   image: ImageInfo;
-  onLike: () => void;
 };
 
 const LikedImage = React.forwardRef<HTMLImageElement, Props>(
-  ({ image, onLike, ...rest }, ref) => {
+  ({ image, ...rest }, ref) => {
     return (
       <div className={`relative liked-image`}>
         {image.base64 ? (
@@ -32,15 +31,14 @@ const LikedImage = React.forwardRef<HTMLImageElement, Props>(
           />
         )}
 
-        <div
-          className="absolute top-1 right-1 rounded-xl bg-grey p-1 bg-[grey] bg-opacity-[0.4] control-box"
-          onClick={onLike}
-        >
-          {image.likes_count > 0 && (
-            <span className="text-white">{image.likes_count}</span>
-          )}
-          {image.liked ? '❤️' : '🤍'}
-        </div>
+        {(image.liked || image.likes_count > 0) && (
+          <div className="absolute top-1 right-1 rounded-xl bg-grey p-1 bg-[grey] bg-opacity-[0.4] control-box">
+            {image.likes_count > 0 && (
+              <span className="text-white">{image.likes_count}</span>
+            )}
+            {image.liked ? '❤️' : '🤍'}
+          </div>
+        )}
       </div>
     );
   }

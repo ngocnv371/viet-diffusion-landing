@@ -33,7 +33,6 @@ export const ImageList: FC = () => {
           images={state.items as any}
           elements={[]}
           cols={cols}
-          onLike={() => Promise.resolve()}
           caption={(i) =>
             [
               i.prompt,
@@ -49,7 +48,7 @@ export const ImageList: FC = () => {
           </div>
         )}
         {loading &&
-          [...new Array(6)].map((_, i) => (
+          [...new Array(16)].map((_, i) => (
             <ImageSkeleton className="pr-[1px] pb-[1px]" key={i} />
           ))}
       </div>

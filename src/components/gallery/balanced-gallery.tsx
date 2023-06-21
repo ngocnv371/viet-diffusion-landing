@@ -1,4 +1,4 @@
-import React, { FC, useMemo, useState } from 'react';
+import React, { FC, useMemo } from 'react';
 
 import { UIElementData } from 'photoswipe/dist/types/ui/ui-element';
 import { Gallery, Item } from 'react-photoswipe-gallery';
@@ -11,25 +11,10 @@ import { distributeEvenHeightColumns, getCdnImage } from './util';
 interface GalleryItemProps {
   image: ImageInfo;
   caption: (image: ImageInfo) => string;
-  onLike: (image: ImageInfo) => Promise<void>;
 }
 
-const GalleryItem: FC<GalleryItemProps> = ({ image, caption, onLike }) => {
+const GalleryItem: FC<GalleryItemProps> = ({ image, caption }) => {
   const cdn = getCdnImage(image.cdnId);
-  const [busy, setBusy] = useState(false);
-
-  async function handleLike() {
-    if (busy) {
-      return;
-    }
-
-    setBusy(true);
-    try {
-      await onLike(image);
-    } finally {
-      setBusy(false);
-    }
-  }
 
   return (
     <Item
@@ -43,7 +28,6 @@ const GalleryItem: FC<GalleryItemProps> = ({ image, caption, onLike }) => {
       {({ ref, open }) => (
         <LikedImage
           image={image}
-          onLike={handleLike}
           ref={ref as any}
           className="gallery-image"
           onClick={open}
@@ -64,7 +48,6 @@ export interface BalancedGalleryProps {
   cols?: number;
   elements?: UIElementData[];
   caption?: (image: ImageInfo) => string;
-  onLike: (image: ImageInfo) => Promise<void>;
 }
 
 const BalancedGallery: FC<BalancedGalleryProps> = ({
@@ -72,7 +55,6 @@ const BalancedGallery: FC<BalancedGalleryProps> = ({
   cols = 2,
   elements = [],
   caption = () => '',
-  onLike,
 }) => {
   const columns = useMemo(
     () => (cols === 0 ? [] : distributeEvenHeightColumns(images, cols)),
@@ -87,18 +69,13 @@ const BalancedGallery: FC<BalancedGalleryProps> = ({
     >
       {cols === 0 &&
         images.map((i) => (
-          <GalleryItem key={i.id} image={i} caption={caption} onLike={onLike} />
+          <GalleryItem key={i.id} image={i} caption={caption} />
         ))}
       {cols > 0 &&
         columns.map((col, idx) => (
           <div key={idx} className="gallery-column">
             {col.map((i) => (
-              <GalleryItem
-                key={i.id}
-                image={i}
-                caption={caption}
-                onLike={onLike}
-              />
+              <GalleryItem key={i.id} image={i} caption={caption} />
             ))}
           </div>
         ))}
