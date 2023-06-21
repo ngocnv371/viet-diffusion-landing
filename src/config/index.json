@@ -12,7 +12,10 @@
       "name": "Tính năng",
       "href": "features"
     },
-
+    {
+      "name": "Gallery",
+      "href": "/gallery"
+    },
     {
       "name": "Bảng Giá",
       "href": "pricing"

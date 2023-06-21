@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
 import {
   RecoilState,
@@ -74,22 +74,7 @@ function usePagedList<T extends { id: number | string }>(
     }
 
     load();
-  }, [
-    offset,
-    order,
-    query,
-    mode,
-    state.offset,
-    state.order,
-    state.query,
-    state.mode,
-    limit,
-    onError,
-    accessToken,
-    api,
-    state.items.length,
-    state.limit,
-  ]);
+  }, [offset, order, query, mode]);
 
   function fetchMore() {
     if (state.loading) {
@@ -149,3 +134,13 @@ export function useCommunityImagesFilter(): [
     },
   ];
 }
+
+export const useWindowWidth = () => {
+  const [width, setWidth] = useState(0); // default width, detect on server.
+  const handleResize = () => setWidth(window.innerWidth);
+  useEffect(() => {
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, [handleResize]);
+  return width;
+};

@@ -19,7 +19,7 @@ function getIndexOfSmallest(list: number[]) {
   for (let i = ret + 1; i < list.length; i += 1) {
     const l1 = list[i];
     const l2 = list[ret];
-    if (l1 && l2 && l1 < l2) {
+    if (l1 !== undefined && l2 !== undefined && l1 < l2) {
       ret = i;
     }
   }

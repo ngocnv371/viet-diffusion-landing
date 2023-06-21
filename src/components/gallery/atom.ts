@@ -4,7 +4,7 @@ import { ListFilter, Paged } from './model';
 
 export const accessTokenState = atom({
   key: 'accessTokenState',
-  default: '',
+  default: 'DEFAULT ACCESS TOKEN',
 });
 
 export const listFilterState = atomFamily<ListFilter, string>({
