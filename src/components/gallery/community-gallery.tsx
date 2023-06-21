@@ -13,7 +13,7 @@ export const ImageList: FC = () => {
   const items = state.items as Image[];
   const { loading } = state;
   const width = useWindowWidth();
-  const COL_WIDTH = 385;
+  const COL_WIDTH = 285;
   const cols = Math.min(8, Math.ceil(width / COL_WIDTH));
 
   return (
