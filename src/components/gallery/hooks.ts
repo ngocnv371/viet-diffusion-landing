@@ -140,6 +140,7 @@ export const useWindowWidth = () => {
   const handleResize = () => setWidth(window.innerWidth);
   useEffect(() => {
     window.addEventListener('resize', handleResize);
+    handleResize();
     return () => window.removeEventListener('resize', handleResize);
   }, [handleResize]);
   return width;
