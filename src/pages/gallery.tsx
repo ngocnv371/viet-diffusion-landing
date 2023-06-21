@@ -3,6 +3,7 @@ import React from 'react';
 import Link from 'next/link';
 
 import { ImageList } from '../components/gallery/community-gallery';
+import SearchBox from '../components/gallery/searchbox';
 import config from '../config/index.json';
 
 const GalleryPage = () => {
@@ -24,6 +25,7 @@ const GalleryPage = () => {
                   <img alt="logo" className="h-16 w-auto sm:h-16" src={logo} />
                 </span>
               </Link>
+              <SearchBox />
             </div>
           </div>
         </nav>
