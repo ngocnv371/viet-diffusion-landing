@@ -3,6 +3,7 @@ import React from 'react';
 import Link from 'next/link';
 
 import { ImageList } from '../components/gallery/community-gallery';
+import Orders from '../components/gallery/orders';
 import SearchBox from '../components/gallery/searchbox';
 import config from '../config/index.json';
 
@@ -26,6 +27,7 @@ const GalleryPage = () => {
                 </span>
               </Link>
               <SearchBox />
+              <Orders />
             </div>
           </div>
         </nav>

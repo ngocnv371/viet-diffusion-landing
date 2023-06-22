@@ -17,7 +17,7 @@ const SearchBox: FC = () => {
 
   return (
     <div className="ml-2">
-      <div className="relative mt-2 rounded-md shadow-sm">
+      <div className="relative rounded-md shadow-sm">
         <div className="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
           <span className="text-gray-500 sm:text-sm">
             <SearchIcon className="h-6 w-6" aria-hidden="true" />
