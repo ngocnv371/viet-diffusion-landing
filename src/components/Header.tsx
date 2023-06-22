@@ -47,7 +47,9 @@ const Menu = () => {
             <div className="hidden md:block md:ml-10 md:pr-4 md:space-x-8">
               {navigation.map((item) =>
                 item.href.startsWith('/') ? (
-                  <a href={item.href}>{item.name}</a>
+                  <a key={item.name} href={item.href}>
+                    {item.name}
+                  </a>
                 ) : (
                   <Link
                     spy={true}
