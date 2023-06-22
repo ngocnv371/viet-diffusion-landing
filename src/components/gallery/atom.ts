@@ -10,7 +10,7 @@ export const accessTokenState = atom({
 export const listFilterState = atomFamily<ListFilter, string>({
   key: 'listFilterState',
   default: {
-    order: 'new',
+    order: 'trending',
     query: '',
     limit: 50,
     offset: 0,
@@ -23,7 +23,7 @@ export const listState = atomFamily<Paged<{ id: number | string }>, string>({
   default: {
     mode: '',
     query: '',
-    order: 'new',
+    order: 'trending',
     limit: 50,
     offset: 0,
     items: [],
