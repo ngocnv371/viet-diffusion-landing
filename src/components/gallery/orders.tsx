@@ -17,8 +17,10 @@ const OrderButton: FC<React.PropsWithChildren<OrderButtonProps>> = ({
   return (
     <button
       onClick={onClick}
-      className={`ring-1 ring-inset ring-gray-300 py-1 px-2 inline-flex relative text-sm font-semibold hover:bg-gray-100 ${className} ${
-        active ? 'active' : ''
+      className={`capitalize ring-1 ring-inset  py-2 px-4 inline-flex relative text-md font-semibold  ${className} ${
+        active
+          ? 'bg-primary text-white ring-primary'
+          : 'ring-gray-300 hover:bg-gray-100'
       }`}
     >
       {children}
@@ -26,8 +28,11 @@ const OrderButton: FC<React.PropsWithChildren<OrderButtonProps>> = ({
   );
 };
 
+const orders = ['trending', 'top', 'new', 'liked'];
 const Orders: FC = () => {
-  const [, , setOrder, setMode] = useCommunityImagesFilter();
+  const [filter, , setOrder, setMode] = useCommunityImagesFilter();
+  const { order, mode } = filter;
+  const selectedOrder = mode || order;
 
   function onOrderUpdated(e: string) {
     if (e === 'liked') {
@@ -39,30 +44,20 @@ const Orders: FC = () => {
 
   return (
     <span className="inline-flex isolate ml-2">
-      <OrderButton
-        onClick={() => onOrderUpdated('trending')}
-        className="rounded-l"
-      >
-        Trending
-      </OrderButton>
-      <button
-        onClick={() => onOrderUpdated('top')}
-        className="ring-1 ring-inset ring-gray-300 py-1 px-2 inline-flex relative text-sm font-semibold hover:bg-gray-100"
-      >
-        Top
-      </button>
-      <button
-        onClick={() => onOrderUpdated('new')}
-        className="ring-1 ring-inset ring-gray-300 py-1 px-2 inline-flex relative text-sm font-semibold hover:bg-gray-100"
-      >
-        New
-      </button>
-      <button
-        onClick={() => onOrderUpdated('liked')}
-        className="ring-1 ring-inset ring-gray-300 py-1 px-2 inline-flex relative text-sm font-semibold hover:bg-gray-100 rounded-r"
-      >
-        Liked
-      </button>
+      {orders.map((k, idx) => (
+        <OrderButton
+          key={k}
+          onClick={() => onOrderUpdated(k)}
+          className={
+            (idx === 0 && 'rounded-l') ||
+            (idx === orders.length - 1 && 'rounded-r') ||
+            ''
+          }
+          active={k === selectedOrder}
+        >
+          {k}
+        </OrderButton>
+      ))}
     </span>
   );
 };
