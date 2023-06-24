@@ -36,7 +36,8 @@ export const ImageList: FC = () => {
           caption={(i) =>
             [
               i.prompt,
-              // i.styleId && `<span class='style-caption'>${i.styleId}</span>`,
+              i.styleId &&
+                `<br/><span class='text-sm text-yellow-500'>${i.styleId}</span>`,
             ]
               .filter(Boolean)
               .join('\n')

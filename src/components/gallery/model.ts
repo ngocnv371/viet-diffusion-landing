@@ -2,7 +2,6 @@ export interface Image extends ImageInfo {
   userId: string;
   seed: number;
   subseed: number;
-  styleId: string;
   info: string;
   recent_likes_count: number;
   requestId: number;
@@ -15,6 +14,7 @@ export interface ImageInfo {
   width: number;
   height: number;
   prompt: string;
+  styleId?: string;
   negative_prompt: string;
   liked: boolean;
   likes_count: number;
