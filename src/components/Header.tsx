@@ -2,6 +2,7 @@ import React, { Fragment } from 'react';
 
 import { Popover, Transition } from '@headlessui/react';
 import { MenuIcon, XIcon } from '@heroicons/react/outline';
+import NextLink from 'next/link';
 import { Link } from 'react-scroll';
 
 import config from '../config/index.json';
@@ -47,9 +48,9 @@ const Menu = () => {
             <div className="hidden md:block md:ml-10 md:pr-4 md:space-x-8">
               {navigation.map((item) =>
                 item.href.startsWith('/') ? (
-                  <a key={item.name} href={item.href}>
+                  <NextLink key={item.name} href={item.href}>
                     {item.name}
-                  </a>
+                  </NextLink>
                 ) : (
                   <Link
                     spy={true}
