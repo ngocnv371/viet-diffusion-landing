@@ -2,8 +2,9 @@ import React, { FC } from 'react';
 
 import { toast } from 'react-hot-toast';
 import InfiniteScroll from 'react-infinite-scroll-component';
+import { Gallery } from 'react-photoswipe-gallery';
 
-import BalancedGallery from './balanced-gallery';
+import GalleryItem from './gallery-item';
 import { useCommunityImages, useWindowWidth } from './hooks';
 import { ImageSkeleton } from './image-skeleton';
 import { Image } from './model';
@@ -29,28 +30,31 @@ export const ImageList: FC = () => {
         css class wont get generated
       </div>
       <div className={`grid grid-cols-${cols}`}>
-        <BalancedGallery
-          images={state.items as any}
-          elements={[]}
-          cols={cols}
-          caption={(i) =>
-            [
-              i.prompt,
-              i.styleId &&
-                `<br/><span class='text-sm text-yellow-500'>${i.styleId}</span>`,
-            ]
-              .filter(Boolean)
-              .join('\n')
-          }
-        />
+        <Gallery withCaption options={{ closeOnVerticalDrag: true }}>
+          {items.map((image) => (
+            <GalleryItem
+              key={image.id}
+              image={image}
+              caption={(i) =>
+                [
+                  i.prompt,
+                  i.styleId &&
+                    `<br/><span class='text-sm text-yellow-500'>${i.styleId}</span>`,
+                ]
+                  .filter(Boolean)
+                  .join('\n')
+              }
+            />
+          ))}
+        </Gallery>
         {!loading && !items.length && (
           <div className="m-4">
             <span className="m-4">Không có dữ liệu</span>
           </div>
         )}
         {loading &&
-          [...new Array(16)].map((_, i) => (
-            <ImageSkeleton className="pr-[1px] pb-[1px]" key={i} />
+          [...new Array(16)].map((_, j) => (
+            <ImageSkeleton className="pr-[1px] pb-[1px]" key={j} />
           ))}
       </div>
     </InfiniteScroll>
